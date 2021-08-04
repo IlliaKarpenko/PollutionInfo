@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="false"
+    android:background="#90CAF9">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/locationEditTextLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:hint="Search city"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/magnifying_glass">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/locationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardViewAQI"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/locationEditTextLayout"
+        android:layout_marginTop="180dp"
+        app:cardBackgroundColor="@color/AirIndexNA"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationEditTextLayout">
+
+        <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:shadowColor="#4E4E4E"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:text="N/A"
+            android:textAlignment="center"
+            android:textColor="#E4E4E4"
+            android:textSize="48sp"></TextView>
+
+        <RelativeLayout
+            android:id="@+id/loadingPanel"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/AQItextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CardViewAQI"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center|center_vertical"
+        android:shadowColor="#454545"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:textAlignment="center"
+        android:textColor="#E4E4E4"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@+id/CardViewAQI"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

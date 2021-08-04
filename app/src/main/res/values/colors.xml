@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#323232</color>
+    <color name="colorPrimaryDark">#171717</color>
+    <color name="colorAccent">#CACACA</color>
+    <color name="blackText">#181818</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="AirIndexNA">#BABABA</color>
+    <color name="AirIndex0">#009966</color>
+    <color name="AirIndex1">#F1C40F</color>
+    <color name="AirIndex2">#E67E22</color>
+    <color name="AirIndex3">#E74C3C</color>
+    <color name="AirIndex4">#9B59B6</color>
+    <color name="AirIndex5">#C11E0D</color>
+</resources>
