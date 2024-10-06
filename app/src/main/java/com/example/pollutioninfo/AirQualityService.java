@@ -11,7 +11,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class AirQualityService {
-    String AqiAPI = "b6bcc8809a08a6995ce55b9a266ff860e6097f2e";
+    String AqiAPI = "";
     String AQI;
     Context context;
 
