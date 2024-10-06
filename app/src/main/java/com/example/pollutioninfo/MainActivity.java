@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     TextInputEditText locationEditText;
     TextView AirIndex;
     TextView AQItextView;
-    String PlacesAPI = "AIzaSyCDiEsnsBSH5vjDwfFfkiyO529fjdvSfNY"; //API key
+    String PlacesAPI = ""; //API key
     CardView AQIcolor;
     RelativeLayout loadingPanel;
 
